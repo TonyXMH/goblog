@@ -6,9 +6,10 @@ import (
 )
 
 var (
-	appName="accountservice"
+	appName = "accountservice"
 )
-func main()  {
-	fmt.Printf("appName %+v",appName)
+
+func main() {
+	fmt.Printf("appName %+v", appName)
 	service.StartWebServer("6768")
 }

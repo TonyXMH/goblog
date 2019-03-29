@@ -1,13 +1,12 @@
 package service
 
 import (
-	"github.com/callistaenterprise/goblog/accountservice/service"
 	"log"
 	"net/http"
 )
 
 func StartWebServer(port string) {
-	r := service.NewRouter()
+	r := NewRouter()
 	http.Handle("/", r)
 	log.Println("Start HTTP server on port ", port)
 	err := http.ListenAndServe(":"+port, nil)

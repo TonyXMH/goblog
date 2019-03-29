@@ -2,7 +2,8 @@ package service
 
 import (
 	"encoding/json"
-	"github.com/TonyXMH/goblog/dbclient"
+	"github.com/TonyXMH/goblog/accountservice/dbclient"
+
 	"github.com/gorilla/mux"
 	"net/http"
 	"strconv"

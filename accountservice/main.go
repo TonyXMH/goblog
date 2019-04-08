@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/TonyXMH/goblog/accountservice/service"
-	"github.com/TonyXMH/goblog/dbclient"
+	"github.com/TonyXMH/goblog/accountservice/dbclient"
 )
 
 var (

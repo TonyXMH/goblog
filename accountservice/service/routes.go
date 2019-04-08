@@ -19,4 +19,16 @@ var routes = Routes{
 		HandlerFunc:GetAccount,
 
 	},
+	Route{
+		Name:        "HealthCheck",
+		Method:      "GET",
+		Pattern:     "/health",
+		HandlerFunc: HealthCheck,
+	},
+	Route{
+		Name:        "TestAbility",
+		Method:      "GET",
+		Pattern:     "/testability/healthy/{state}",
+		HandlerFunc: SetHealthyState,
+	},
 }
